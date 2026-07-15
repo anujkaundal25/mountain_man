@@ -10,11 +10,11 @@ function Heilight() {
   const [dynamicHeight, setDynamicHeight] = useState("300vh");
 
   const capabilities = [
-    { title: "Brand", description: "Build multidimensional brands for growth.", image: "/expertise/exper1.webp" },
-    { title: "Media", description: "Meet your audience across many media moments.", image: "/expertise/exper1.webp" },
-    { title: "Data", description: "Transform data to fuel customer experience.", image: "/expertise/exper1.webp" },
-    { title: "Technology Services", description: "Transform your business with innovative tech.", image: "/expertise/exper1.webp" },
-    { title: "Platforms", description: "Build personalized journeys across owned channels.", image: "/expertise/exper1.webp" },
+    { title: "Brand", description: "Build multidimensional brands for growth.", image: "https://www.monks.com/data/2023-06/uni-brand-capability-media.monks_case1.jpg?VersionId=6oZ5iwMw5LBj3na_sm0X1EeS.5lu63w6" },
+    { title: "Media", description: "Meet your audience across many media moments.", image: "https://www.monks.com/data/2023-05/media-capability-media.monks-header-3.jpg?VersionId=LcR1MfqZoZb0SIaybugKIyWgd_MZHS_p" },
+    { title: "Data", description: "Transform data to fuel customer experience.", image: "https://www.monks.com/data/2022-10/data-foundations-media.monks-main.jpg" },
+    { title: "Technology Services", description: "Transform your business with innovative tech.", image: "https://www.monks.com/data/2024-08/platforms-RWJMB-watch-yellow.png?VersionId=lS3fD5VWi6IsFCc1CHXUiQ7YbH168eNZ" },
+    { title: "Platforms", description: "Build personalized journeys across owned channels.", image: "https://www.monks.com/data/2023-09/media.monks-techservices-header-2.jpg?VersionId=0jUtdwDAEVdlxTqIHaVDygSCb95hhZfd" },
   ];
 
   useEffect(() => {
@@ -88,7 +88,7 @@ function Heilight() {
         <div className="flex flex-col lg:flex-row items-end gap-8 w-full relative mb-4">
           
           {/* Left Side Label (Now anchored directly next to sliding track height) */}
-          <div className="lg:w-48 pb-6 shrink-0 flex flex-col items-start relative z-10">
+          <div className="lg:w-48 pb-6 shrink-0 flex flex-col z-10">
             <span className="text-xs font-bold uppercase tracking-widest opacity-75 mb-1">
               Highlighted
             </span>

@@ -16,16 +16,16 @@ function Expertise() {
                 {/* Card 1 */}
                 <div className='space-y-3 cursor-pointer group'>
                     <div className="overflow-hidden rounded-lg">
-                        <img src="/expertise/exper1.webp" alt="" className='w-full h-auto transition-transform duration-500 ease-in-out group-hover:scale-110'/>
+                        <img src="https://images.pexels.com/photos/15635398/pexels-photo-15635398.jpeg" alt="" className='w-full h-auto transition-transform duration-500 ease-in-out group-hover:scale-110'/>
                     </div>
                     <p className='text-lg font-semibold'>Case Study</p>
-                    <h1 className='flex items-center gap-3 text-2xl font-semibold'>Boomtown Unboxed <FaArrowRight className="h-7 w-7 p-1 bg-gray-800 text-white rounded-full"/></h1>
+                    <h1 className='flex items-center gap-3 text-2xl font-semibold'> The Marketer’s Playbook<FaArrowRight className="h-7 w-7 p-1 bg-gray-800 text-white rounded-full"/></h1>
                 </div>
 
                 {/* Card 2 */}
                 <div className='space-y-3 cursor-pointer group'>
                     <div className="overflow-hidden rounded-lg">
-                        <img src="/expertise/exper1.webp" alt="" className='w-full h-auto transition-transform duration-500 ease-in-out group-hover:scale-110'/>
+                        <img src="https://images.pexels.com/photos/6333933/pexels-photo-6333933.jpeg" alt="" className='w-full h-auto transition-transform duration-500 ease-in-out group-hover:scale-110'/>
                     </div>
                     <p className='text-lg font-semibold'>Case Study</p>
                     <h1 className='flex items-center gap-3 text-2xl font-semibold'>Boomtown Unboxed <FaArrowRight className="h-7 w-7 p-1 bg-gray-800 text-white rounded-full"/></h1>
@@ -34,10 +34,10 @@ function Expertise() {
                 {/* Card 3 */}
                 <div className='space-y-3 cursor-pointer group'>
                     <div className="overflow-hidden rounded-lg">
-                        <img src="/expertise/exper1.webp" alt="" className='w-full h-auto transition-transform duration-500 ease-in-out group-hover:scale-110'/>
+                        <img src="https://images.pexels.com/photos/12960383/pexels-photo-12960383.jpeg" alt="" className='w-full h-auto transition-transform duration-500 ease-in-out group-hover:scale-110'/>
                     </div>
                     <p className='text-lg font-semibold'>Case Study</p>
-                    <h1 className='flex items-center gap-3 text-2xl font-semibold'>Boomtown Unboxed <FaArrowRight className="h-7 w-7 p-1 bg-gray-800 text-white rounded-full"/></h1>
+                    <h1 className='flex items-center gap-3 text-2xl font-semibold'>CES 2026: From Vision to Velocit <FaArrowRight className="h-7 w-7 p-1 bg-gray-800 text-white rounded-full"/></h1>
                 </div>
 
             </div>

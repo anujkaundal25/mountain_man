@@ -8,7 +8,8 @@ import Form from "@/components/sections/Form";
 import Footer from "@/components/sections/Footer";
 import Highlights from "@/components/sections/Highlights";
 import Partners from "@/components/sections/Partners";
-
+import About from "@/components/sections/About"
+import OurApproach from "@/components/sections/OurApproach";
 export default function Home() {
   return (
     <>
@@ -17,10 +18,10 @@ export default function Home() {
       {/* Hero */}
       <HeroSection />
 
-
+      <About/>
       {/* What we offer */}
       <Services />
-
+      <OurApproach/>
       {/* Why choose us / Highlights */}
       <Highlights />
 
