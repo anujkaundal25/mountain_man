@@ -40,7 +40,8 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-[#0a0a0a] text-[#f5f5f5] pt-20 pb-10 px-6 md:px-12 lg:px-20 border-t border-neutral-900 font-sans antialiased">
+    <footer
+     className="bg-[#0a0a0a] text-[#f5f5f5] pt-20 pb-10 px-6 md:px-12 lg:px-20 border-t border-neutral-900 antialiased">
       <div className="max-w-7xl mx-auto">
         
         {/* Top Section: Brand Statement & Newsletter Subscription */}
@@ -49,7 +50,7 @@ function Footer() {
             <span className="text-xs uppercase tracking-[0.2em] text-neutral-500 font-semibold block">
               The Mountain Men
             </span>
-            <h2 className="text-4xl md:text-5xl font-light tracking-tight leading-[1.1] max-w-2xl text-neutral-200">
+            <h2 className="text-4xl md:text-5xl  font-extrabold tracking-tight max-w-5xl leading-[1.15] text-white">
               Creating digital experiences that scale heights and leave footprints.
             </h2>
           </div>

@@ -1,5 +1,6 @@
 import { Geist_Mono } from "next/font/google";
-import { helveticaNow } from "@/lib/font";
+import { helveticaNow, helveticaNowExtended } from "@/lib/font";
+import CustomCursor from "@/components/sections/CustomCursor";
 import "@/styles/fonts.css";
 import "./globals.css";
 
@@ -17,9 +18,12 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${helveticaNow.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${helveticaNow.variable} ${helveticaNowExtended.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col cursor-none">
+        <CustomCursor />
+        {children}
+      </body>
     </html>
   );
 }

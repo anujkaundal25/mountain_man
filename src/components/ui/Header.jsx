@@ -31,11 +31,13 @@ function Header() {
     >
       {/* Logo */}
       <div>
-        <h1 className={`text-4xl font-bold tracking-tight transition-colors duration-300 ${
-          isScrolled ? 'text-gray-900' : 'text-white'
-        }`}>
+        <h2
+          className={`text-2xl font-black tracking-tight transition-colors duration-300 ${
+            isScrolled ? 'text-gray-900' : 'text-white'
+          }`}
+        >
           The Mountain Men
-        </h1>
+        </h2>
       </div>
       
       {/* Navigation Links & Button */}

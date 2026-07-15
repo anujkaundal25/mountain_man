@@ -1,94 +1,127 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 
 function Services() {
   const services = [
     {
       id: "01",
-      img: "/services/image1.webp", // Replace with your actual image path
+      img: "/services/image1.webp", 
       category: "Solutions",
       title: "Real-Time Brands",
       dis: "Brands built as living systems to move at the speed of culture",
     },
     {
       id: "02",
-      img: "/services/image1.webp", // Replace with your actual image path
+      img: "/services/image1.webp", 
       category: "Solutions",
       title: "Media Acceleration",
       dis: "Unifying intelligence, content, media, and measurement into one performance system",
     },
     {
       id: "03",
-      img: "/services/image1.webp", // Replace with your actual image path
+      img: "/services/image1.webp", 
       category: "Solutions",
       title: "Marketing Orchestration",
       dis: "We collapse your content supply chain into one AI-powered system",
     },
     {
       id: "04",
-      img: "/services/image1.webp", // Replace with your actual image path
+      img: "/services/image1.webp", 
       category: "Solutions",
       title: "AI Transformation",
       dis: "AI embedded across your business, from strategy to scale",
     },
   ];
 
+  // Motion Animation Variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: [0.215, 0.610, 0.355, 1.000], // Premium cubier-bezier ease-out
+      },
+    },
+  };
+
   return (
-    <div className="bg-[#EAEAEA] min-h-screen p-20 flex flex-col items-center">
+    <div
+    className="bg-[#E5E3DF] min-h-screen p-20 flex flex-col items-center overflow-x-hidden">
       {/* Header section */}
-      <div className="max-w-4xl text-center mb-20">
-        <h1 className="text-3xl md:text-4xl font-semibold text-neutral-800 leading-snug">
-          Your trusted partner for innovation across four strategic service offerings:
-        </h1>
+      <div className="w-full text-left mb-20 lg:mb-28">
+        <h2 className="text-[20px] sm:text-[32px] md:text-[45px] lg:text-6xl font-black text-neutral-900 tracking-tighter leading-[1.05] max-w-6xl">
+          Your trusted partner for innovation across four strategic service offerings
+        </h2>
       </div>
 
-      {/* Grid container with staggered alignment */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 items-start">
+      {/* Grid container with stagger offset */}
+      <motion.div 
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-20 lg:gap-y-0 w-full max-w-7xl items-start"
+      >
         {services.map((item, index) => {
-          // Stagger effect: Push even-indexed items down on larger screens
-          const isEven = index % 2 !== 0;
+          // Exactly replicate the staggered column offset from your design
+          // Column 2 (index 1) and Column 4 (index 3) are pushed down on large screens
+          const isStaggered = index % 2 !== 0;
 
           return (
-            <div
+            <motion.div
               key={item.id}
-              className={`flex flex-col relative group ${
-                isEven ? "lg:translate-y-12" : ""
+              variants={itemVariants}
+              className={`flex flex-col relative group w-full ${
+                isStaggered ? "lg:translate-y-16" : ""
               }`}
             >
-              {/* Giant background number behind the image */}
-              <div className="absolute -top-25 right-4 text-[120px] font-black text-white/70 select-none pointer-events-none z-0">
+              {/* Giant background number positioned exactly like the image layout */}
+              <div className="absolute -top-16 lg:-top-20 right-4 text-[100px] lg:text-[130px] font-black text-white select-none pointer-events-none z-0 tracking-tighter leading-none">
                 {item.id}
               </div>
 
-              {/* Image card */}
-              <div className="relative z-10 w-full aspect-[4/3] sm:aspect-square overflow-hidden rounded-xl shadow-sm mb-6 bg-neutral-200">
+              {/* Image card container */}
+              <div className="relative z-10 w-full aspect-[4/3.9] overflow-hidden rounded-[4px] mb-6 bg-neutral-300">
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                 />
               </div>
 
               {/* Content area */}
-              <div className="relative z-10 px-1 text-left">
-                <span className="text-sm font-medium text-neutral-500 block mb-2">
+              <div className="relative z-10 text-left flex flex-col gap-2.5">
+                <span className="text-[11px] md:text-[13px] font-semibold text-neutral-800 tracking-wide">
                   {item.category}
                 </span>
                 
-                {/* Title & interactive Arrow */}
-                <div className="flex items-center justify-between gap-2 mb-3 cursor-pointer group/title">
-                  <h2 className="text-xl md:text-2xl font-bold text-neutral-800 transition-colors group-hover/title:text-neutral-600">
+                {/* Title & Circle Arrow Row */}
+                <div className="flex items-center justify-between gap-3 cursor-pointer group/title">
+                  <h2 className="text-[20px] md:text-[23px] font-bold text-neutral-900 tracking-tight leading-snug">
                     {item.title}
                   </h2>
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center text-white transition-transform duration-300 group-hover/title:translate-x-1">
+                  <div className="flex-shrink-0 w-[26px] h-[26px] rounded-full bg-neutral-800 flex items-center justify-center text-white transition-all duration-300 group-hover/title:bg-neutral-950 group-hover/title:translate-x-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      strokeWidth={2.5}
+                      strokeWidth={3}
                       stroke="currentColor"
-                      className="w-4 h-4"
+                      className="w-3 h-3"
                     >
                       <path
                         strokeLinecap="round"
@@ -99,14 +132,14 @@ function Services() {
                   </div>
                 </div>
 
-                <p className="text-sm md:text-base text-neutral-600 leading-relaxed font-normal">
+                <p className="text-[13.5px] md:text-[14.5px] text-neutral-600 font-normal leading-relaxed max-w-[95%]">
                   {item.dis}
                 </p>
               </div>
-            </div>
+            </motion.div>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 }

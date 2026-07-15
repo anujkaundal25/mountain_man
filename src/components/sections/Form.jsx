@@ -6,14 +6,15 @@ function Form() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-[#EAEAEA] min-h-screen p-6 md:p-12 lg:p-20 flex items-center justify-center">
+    <div
+    className="bg-[#EAEAEA] min-h-screen p-6 md:p-12 lg:p-20 flex items-center justify-center">
       {/* Main Wrapper */}
       <div className="max-w-7xl w-full flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-16">
         {/* Left Column: Heading */}
         <div className="max-w-xl lg:sticky lg:top-12">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-slate-900 leading-[1.15] tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-5xl font-extrabold tracking-tight max-w-5xl leading-[1.15]">
             Let’s unlock what’s possible together.
-          </h1>
+          </h2>
         </div>
 
         {/* Right Column: Hero Elements + Form Card Container */}

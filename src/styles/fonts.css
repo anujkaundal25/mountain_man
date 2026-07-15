@@ -6,6 +6,24 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Helvetica Now Extended';
+  src: url('/fonts/helveticaNowExtended.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --font-helvetica-now: 'Helvetica Now';
+  --font-helvetica-now-extended: 'Helvetica Now Extended';
+}
+
+/* Utility classes for explicit font application */
+.font-helvetica-extended {
+  font-family: var(--font-helvetica-now-extended);
+}
+
+.font-helvetica {
+  font-family: var(--font-helvetica-now);
 }

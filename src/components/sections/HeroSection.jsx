@@ -5,7 +5,8 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 function HeroSection() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section
+    className="relative h-screen w-full overflow-hidden">
       {/* Background Video */}
       <video
         autoPlay
@@ -24,9 +25,9 @@ function HeroSection() {
       {/* Hero Content (Centered) */}
       <div className="relative z-10 flex h-full items-center justify-center text-center text-white px-4">
         <div>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight max-w-5xl leading-[1.15]">
             Capture Every Moment
-          </h1>
+          </h2>
           <p className="mt-4 text-lg md:text-xl text-gray-200 font-medium">
             Discover The Real Time World
           </p>
