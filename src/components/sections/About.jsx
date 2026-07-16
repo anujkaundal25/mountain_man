@@ -9,7 +9,6 @@ function AboutSection() {
     >
       {/* SECTION: About The Mountain Man */}
       <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] max-w-7xl mx-auto gap-8 md:gap-10 items-start px-6 py-16 md:p-20 border-t border-black/10">
-        
         {/* Left Column (Label + Sidebar Branding + Action Button) */}
         <div className="flex flex-col gap-6 md:gap-16 items-start h-full md:sticky md:top-10">
           <div className="flex flex-col gap-2 w-full">
@@ -29,7 +28,7 @@ function AboutSection() {
             {/* Main Button Component */}
             <div className="px-6 h-11 w-fit bg-[#1E1E1E] text-[#EAEAEA] flex justify-center items-center rounded-full z-10 transition-transform duration-300">
               <button className="pointer-events-none text-xs font-medium whitespace-nowrap">
-                Read full chronicle
+                Read More
               </button>
             </div>
 
@@ -44,9 +43,9 @@ function AboutSection() {
         <div className="flex flex-col gap-8 md:gap-12 w-full items-start">
           {/* Main Statement */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight max-w-5xl leading-[1.15] text-black">
-            Forged in the wilderness, built for the modern{" "}
+            The{" "}
             <span className="relative inline-block px-2 sm:px-4 font-normal italic">
-              explorer
+              Mountain
               {/* Hand-drawn SVG Oval overlay */}
               <svg
                 className="absolute left-0 top-1/2 -translate-y-1/2 w-full h-[150%] pointer-events-none stroke-[#1F1F1F] fill-none"
@@ -60,19 +59,34 @@ function AboutSection() {
                 />
               </svg>
             </span>
+            Men
           </h2>
+          <p>The Mountain Men is a dedicated team of raconteurs, philosophers, cinema enthusiasts, and nature lovers that understands your requirements and delivers complete satisfaction. We provide not only what is promised, but also the thoughtful details beyond expectations — and that is what makes us different.</p>
 
           {/* Narrative Paragraphs */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 max-w-4xl text-gray-8xl text-base md:text-lg font-light leading-relaxed">
-            <p>
-              The Mountain Man was born out of a raw necessity for gear that outlasts the elements. We don't believe in cutting corners, mass production, or temporary fixes. Every piece we curate or construct is designed to endure the highest peaks and the toughest conditions.
-            </p>
-            <p>
-              Bridging traditional, rugged craftsmanship with advanced functional design, we provide the modern adventurer with reliability they can depend on blindly. Whether you are scaling alpine rock faces or navigating the concrete jungle, our mission remains unchanged: prepare you for the frontier ahead.
-            </p>
+            <div className="space-y-2">
+              <img src="/about/team1.jpg" alt="" />
+              <h3 className="font-semibold">Deepak Malhotra</h3>
+              <h4>(Director)</h4>
+              <p>
+                A multi talented personality with an extensive on and off field
+                production experience from the industry of more than 10 years,
+                Deepak has been handling the projects with a perfection nobody
+                could match. A humble with a sharp mind personality taking the
+                organization to a new height.
+              </p>
+            </div>
+            <div className="space-y-2">
+              <img src="/about/team2.jpg" alt="" />
+              <h3 className="font-semibold">Gaurav Gairola</h3>
+              <h4>(Director)</h4>
+              <p>
+                An experienced mountaineer and seasoned traveller who has been to the core of Uttarakhand to live and experience the roots. With an experience of local know-hows, folklores and tradition, he has been working closely with the state tourism board to promote and advertise the tradition and beauty of Uttarakhand, especially, making documentaries.
+              </p>
+            </div>
           </div>
         </div>
-
       </div>
     </div>
   );

@@ -17,3 +17,26 @@ body {
   color: var(--foreground);
   font-family: var(--font-helvetica-now-extended), sans-serif;
 }
+@keyframes marquee-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 50s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 50s linear infinite;
+}
+
+/* Custom helper to cleanly pause animations across nested groups */
+.pause-marquee:hover .animate-marquee-left,
+.pause-marquee:hover .animate-marquee-right {
+  animation-play-state: paused;
+}

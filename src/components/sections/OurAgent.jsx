@@ -144,44 +144,43 @@ function OurAgent() {
       </div>
 
       {/* SECTION 2: Our Agents */}
-      <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] max-w-7xl mx-auto gap-6 md:gap-10 items-start px-6 py-6 md:pt-10 md:px-20">
-        {/* Left Column Label */}
+      {/* <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] max-w-7xl mx-auto gap-6 md:gap-10 items-start px-6 py-6 md:pt-10 md:px-20">
+
         <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 md:pt-3">
           Our Agents
         </p>
 
-        {/* Right Column Content */}
+
         <div className="flex flex-col gap-6 md:gap-12 w-full items-start">
           <h3 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight max-w-4xl leading-[1.1] text-black">
             Your always-on agents for last-mile intelligence — rapid, real, and
             powered by monks.flow
           </h3>
 
-          {/* Button Centered underneath heading as per reference */}
+
           <div className="flex justify-start items-center group cursor-pointer w-fit md:pl-10">
-            {/* Left Arrow: Smooth expand & fade in */}
+
             <div className="h-9 w-0 opacity-0 bg-[#1E1E1E] text-[#EAEAEA] flex justify-center items-center rounded-full overflow-hidden transition-all duration-300 ease-in-out group-hover:w-9 group-hover:opacity-100">
               <FaArrowRight className="text-[10px]" />
             </div>
 
-            {/* Main Button */}
+
             <div className="px-5 h-9 w-fit bg-[#1E1E1E] text-[#EAEAEA] flex justify-center items-center rounded-full z-10">
               <button className="pointer-events-none text-xs font-medium whitespace-nowrap">
                 Explore Monks.Flow
               </button>
             </div>
 
-            {/* Right Arrow: Smooth shrink & fade out */}
+
             <div className="h-9 w-9 opacity-100 bg-[#1E1E1E] text-[#EAEAEA] flex justify-center items-center rounded-full overflow-hidden transition-all duration-300 ease-in-out group-hover:w-0 group-hover:opacity-0">
               <FaArrowRight className="text-[10px]" />
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* SECTION 3: Video Player Wrapper */}
-      <div className="flex justify-center items-center min-h-[50vh] md:min-h-screen w-full px-4 py-12">
-        {/* Video container with relative positioning so controls overlay correctly */}
+      {/* <div className="flex justify-center items-center min-h-[50vh] md:min-h-screen w-full px-4 py-12">
         <div
           ref={containerRef}
           className="relative max-w-5xl w-full flex flex-col justify-center items-center group overflow-hidden"
@@ -202,7 +201,6 @@ function OurAgent() {
             Your browser does not support the video tag.
           </video>
 
-          {/* Center Custom Play/Pause Overlay */}
           <div
             onClick={togglePlay}
             className="absolute inset-0 flex justify-center items-center bg-black/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer"
@@ -218,9 +216,7 @@ function OurAgent() {
               )}
             </button>
 
-            {/* Bottom Controls Dashboard Panel */}
             <div className="absolute bottom-3 md:bottom-12 left-3 right-3 md:left-8 md:right-8 flex flex-col gap-2 md:gap-3 text-white pointer-events-auto">
-              {/* Timeline Track Slider */}
               <div className="relative w-full group/timeline flex flex-col px-2 md:px-5">
                 <input
                   type="range"
@@ -232,16 +228,13 @@ function OurAgent() {
                   className="w-full h-1 bg-white/30 rounded-lg appearance-none cursor-pointer accent-white transition-all group-hover/timeline:h-1.5"
                 />
 
-                {/* Time stamps placed immediately below the timeline track bar */}
                 <div className="flex justify-between text-xs md:text-sm mt-1 font-medium tracking-wide">
                   <span>{formatTime(currentTime)}</span>
                   <span>{formatTime(duration)}</span>
                 </div>
               </div>
 
-              {/* Action Buttons Row */}
               <div className="flex justify-between items-center w-full mt-1 md:mt-2 px-2 md:px-5">
-                {/* Left Side: Playback Control */}
                 <button
                   onClick={togglePlay}
                   className="w-8 h-8 md:w-10 md:h-10 bg-white text-black rounded-full flex justify-center items-center shadow transition hover:scale-105 active:scale-95"
@@ -253,7 +246,6 @@ function OurAgent() {
                   )}
                 </button>
 
-                {/* Right Side: Volume & Fullscreen Controls */}
                 <div className="flex items-center gap-2 md:gap-3">
                   <button
                     onClick={toggleMute}
@@ -280,7 +272,7 @@ function OurAgent() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

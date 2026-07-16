@@ -7,21 +7,34 @@ function OurApproach() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const approaches = [
+  {
+    title: "Lodging Arrangements",
+    description:
+      "We provide all categories of hotels across Uttarakhand. Be it a luxury or a budget hotel, for celebrity or crew, we provide all types along with special requirements.",
+  },
     {
-      title: "Real-Time Brands",
-      description: "Stay relevant with ongoing, meaningful experiences that connect and build loyalty."
+      title: "Recce Services",
+      description: "We have a team of experienced people who have thorough demographic, geographic and cultural knowledge of Uttarakhand."
     },
     {
-      title: "Marketing Orchestration",
-      description: "Boost efficiency and creativity to accelerate marketing results at any scale."
+      title: "Permissions",
+      description: "We provide complete permissions from local to government authorities, for the smooth transition of all the projects saving time, money and ensuring the safety of cast and crew."
     },
     {
-      title: "Glass Box Media",
-      description: "Gain total visibility and control to make smarter, more impactful media investments."
+      title: "Transport Services",
+      description: "We provide hassle-free and best transport during, pre and post shoot. We use best vehicles for cast, crew, equipment transfers, and airport/station pick up and drop."
     },
     {
-      title: "Technology Services",
-      description: "Modernize infrastructure, accelerate product and platform innovation, and deliver next-generation customer experiences."
+      title: "One Stop Equipment Solution",
+      description: "We have tie ups with numerous studios and equipment rental houses all over India to meet all the necessary requirements for shoot on-time. Our trusted partners always ensure the timely supply of all the latest equipment."
+    },
+    {
+      title: "Casting",
+      description: "Our experienced team of casting directors, model and extra coordinators not only provide professionals locally but also helps in arranging country-wide casting."
+    },
+    {
+      title: "Catering Services",
+      description: "We have a team of hard working professionals with magical hands and we have been providing scrumptious food since our first project till date."
     }
   ];
 
@@ -34,7 +47,7 @@ function OurApproach() {
     <section className="relative w-full min-h-screen bg-black text-white flex items-center py-20 px-6 md:px-12 lg:px-20 overflow-hidden select-none">
       {/* Background Image / Video Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-screen pointer-events-none"
+        className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-screen pointer-events-none bg-fixed"
         style={{ backgroundImage: `url('https://www.monks.com/data/2025-06/Monks-WWD-GTMs-1.png?VersionId=JCCn023uTS34fuCNZiMzD.4oy0uxGlRC')` }}
       />
 
@@ -44,10 +57,10 @@ function OurApproach() {
         {/* Left Column: Heading */}
         <div className="lg:col-span-5 space-y-4 lg:sticky lg:top-24">
           <span className="text-xs uppercase tracking-widest text-gray-400 font-semibold block">
-            Our Approach
+            Our Services
           </span>
           <h2 className="text-4xl md:text-5xl lg:text-5xl font-extrabold tracking-tight max-w-5xl leading-[1.15]">
-            We’re a future-proof partner on the front line of marketing and technology.
+            Film Production & Line Production Services in Uttarakhand
           </h2>
         </div>
 
@@ -65,11 +78,6 @@ function OurApproach() {
                 {/* Header Row */}
                 <div className="flex items-center justify-between w-full space-x-4">
                   <div className="flex items-center space-x-4">
-                    {/* Left Inline Indicator Arrow (Only shows on the active item) */}
-                    <div className={`flex items-center justify-center rounded-full bg-white text-black transition-all duration-300 overflow-hidden ${isActive ? 'w-6 h-6 opacity-100' : 'w-0 h-6 opacity-0'}`}>
-                      <span className="text-xs font-bold">→</span>
-                    </div>
-                    
                     <h3 className={`text-3xl font-extrabold tracking-tight max-w-5xl leading-[1.15] transition-colors duration-300 ${isActive ? 'text-white' : 'text-white group-hover:text-gray-300'}`}>
                       {item.title}
                     </h3>

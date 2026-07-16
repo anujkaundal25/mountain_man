@@ -1,15 +1,13 @@
-import OurMind from "@/components/sections/OurMind";
-import Expertise from "@/components/sections/Expertise";
+import Location from "@/components/sections/Location";
 import HeroSection from "@/components/sections/HeroSection";
 import OurAgent from "@/components/sections/OurAgent";
-import Services from "@/components/sections/Services";
 import Header from "@/components/ui/Header";
-import Form from "@/components/sections/Form";
-import Footer from "@/components/sections/Footer";
-import Highlights from "@/components/sections/Highlights";
+import Contact from "@/components/sections/Contact";
+import Footer from "@/components/ui/Footer";
+import Project from "@/components/sections/Project";
 import Partners from "@/components/sections/Partners";
 import About from "@/components/sections/About"
-import OurApproach from "@/components/sections/OurApproach";
+import Ourservices from "@/components/sections/Ourservices";
 export default function Home() {
   return (
     <>
@@ -20,24 +18,21 @@ export default function Home() {
 
       <About/>
       {/* What we offer */}
-      <Services />
-      <OurApproach/>
-      {/* Why choose us / Highlights */}
-      <Highlights />
+       <OurAgent />
 
-      {/* Our expertise */}
-      <Expertise />
+      <Ourservices/>
 
-      {/* Meet the team */}
-      <OurAgent />
-
+      {/* our projects */}
+      <Project />
+     
+     {/* loaction */}
+     <Location/>
+     
+     {/* clients */}
       <Partners />
 
-      {/* Company vision & values */}
-      <OurMind />
-
       {/* Contact / CTA */}
-      <Form />
+      <Contact />
 
       <Footer />
     </>

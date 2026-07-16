@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react'
-import { FiMenu, FiX } from 'react-icons/fi' // Swapped to react-icons
+import { FiMenu, FiX } from 'react-icons/fi'
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -20,7 +20,7 @@ function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Prevent scrolling behind the overlay when mobile menu is open
+  // बैकग्राउंड स्क्रॉल को रोकना जब मोबाइल मेनू खुला हो
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = 'hidden'
@@ -30,30 +30,38 @@ function Header() {
   }, [isMobileMenuOpen])
 
   const navLinks = [
-    { name: 'Solutions', href: '#' },
-    { name: 'Marketing Services', href: '#' },
-    { name: 'Technology Services', href: '#' },
-    { name: 'Work', href: '#' },
     { name: 'About Us', href: '#' },
+    { name: 'Team', href: '#' },
+    { name: 'Services', href: '#' },
+    { name: 'Our Clients', href: '#' },
+    { name: 'Gallery', href: '#' },
+    { name: 'Our Projects', href: '#' },
   ]
 
   return (
     <>
       <header 
-        className={`fixed top-0 left-0 w-full z-50 px-6 py-4 md:px-16 flex items-center justify-between transition-all duration-300 ${
-          isScrolled 
-            ? 'bg-[#EAE8E4] shadow-md py-3' 
-            : 'bg-transparent py-5'
+        className={`fixed top-0 left-0 w-full z-50 px-6 py-3 md:px-16 flex items-center justify-between transition-all duration-300 ${
+          isMobileMenuOpen
+            ? 'bg-[#EAE8E4]' 
+            : isScrolled 
+              ? 'bg-[#EAE8E4] shadow-md' 
+              : 'bg-black/80'
         }`}
       >
-        {/* Logo */}
-        <div>
+        {/* Logo और Brand Name */}
+        <div className='flex items-center gap-3'>
+          <img 
+            src="/logo.webp" 
+            alt="Logo"
+            className="w-10 h-10 md:w-12 md:h-12 object-contain" 
+          />
           <h2
-            className={`text-xl md:text-2xl font-black tracking-tight transition-colors duration-300 ${
+            className={`text-base md:text-lg font-black tracking-tight transition-colors duration-300 ${
               isScrolled || isMobileMenuOpen ? 'text-gray-900' : 'text-white'
             }`}
           >
-            The Mountain Men
+            Mountain Men Films
           </h2>
         </div>
         
@@ -84,7 +92,7 @@ function Header() {
           </ul>
         </nav>
 
-        {/* Mobile Menu Button using react-icons */}
+        {/* Mobile Menu Button */}
         <button 
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className={`lg:hidden z-50 p-2 rounded-md transition-colors focus:outline-none ${
@@ -100,17 +108,17 @@ function Header() {
 
       {/* Mobile Navigation Drawer */}
       <div 
-        className={`fixed inset-0 z-40 bg-[#EAE8E4] transform transition-transform duration-300 ease-in-out lg:hidden flex flex-col justify-center px-8 ${
+        className={`fixed inset-0 z-40 bg-[#EAE8E4] transform transition-transform duration-300 ease-in-out lg:hidden flex flex-col justify-start px-6 pt-24 ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <nav className="w-full max-w-md mx-auto">
-          <ul className="flex flex-col gap-6 text-xl font-bold text-gray-900">
+        <nav className="w-full max-w-sm mx-auto">
+          <ul className="flex flex-col gap-4 text-lg font-bold text-gray-900">
             {navLinks.map((link) => (
               <li 
                 key={link.name}
                 onClick={() => setIsMobileMenuOpen(false)} 
-                className="cursor-pointer border-b border-gray-300/50 pb-3 hover:text-black"
+                className="cursor-pointer border-b border-gray-300/60 pb-2.5 hover:text-black transition-colors"
               >
                 {link.name}
               </li>
@@ -118,7 +126,7 @@ function Header() {
             <li className="pt-4">
               <button 
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="w-full py-4 rounded-full text-sm font-semibold bg-black text-white hover:bg-gray-800 transition-colors"
+                className="w-full py-3.5 rounded-full text-sm font-semibold bg-black text-white hover:bg-gray-800 transition-colors shadow-sm"
               >
                 Connect
               </button>

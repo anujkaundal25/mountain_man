@@ -22,8 +22,8 @@ function Form() {
           {/* Top Row: Badge & Speech Bubble Header */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 md:gap-6">
             {/* Badge */}
-            <div className="flex-shrink-0 flex items-center justify-center h-20 w-20 md:h-24 md:w-24 bg-blue-950 text-white text-lg md:text-xl font-bold rounded-full shadow-md">
-              <span>.monks</span>
+            <div className="flex-shrink-0 flex items-center justify-center h-20 w-20 md:h-24 md:w-24 bg-[#EAE8E4] border-2 border-black text-white text-lg md:text-xl font-bold rounded-full shadow-md">
+              <img src="/logo.webp" alt="" />
             </div>
 
             {/* Speech Bubble */}
@@ -32,7 +32,7 @@ function Form() {
               <div className="hidden sm:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1.5 w-3 h-3 bg-blue-600 rotate-45"></div>
               {/* Bottom pointer arrow for mobile */}
               <div className="block sm:hidden absolute left-8 bottom-0 translate-y-1.5 w-3 h-3 bg-blue-600 rotate-45"></div>
-
+              <h4 className="text-lg font-bold">Contact Us</h4>
               <h3 className="text-base md:text-lg font-medium leading-relaxed">
                 Hey 👋 Please fill out the following quick questions so our team
                 can get in touch with you.
