@@ -40,7 +40,7 @@ function TechPartners() {
     >
       {/* Top Header Content Row */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-16 px-6 md:px-16 lg:px-24">
-        <h2 className="text-3xl md:text-5xl font-black tracking-widest text-black uppercase">
+        <h2 className="text-4xl md:text-5xl lg:text-5xl font-extrabold tracking-tight max-w-5xl leading-[1.15]">
           Our Clients
         </h2>
 

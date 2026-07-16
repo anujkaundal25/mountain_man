@@ -43,7 +43,7 @@ function AboutSection() {
         {/* Right Column (Hero Statement & Core Copy) */}
         <div className="flex flex-col gap-8 md:gap-12 w-full items-start">
           {/* Main Statement */}
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight max-w-5xl leading-[1.15] text-black">
+          <h2 className="text-4xl md:text-5xl lg:text-5xl font-extrabold tracking-tight max-w-5xl leading-[1.15]">
             The{" "}
             <span className="relative inline-block px-2 sm:px-4 font-normal italic">
               Mountain
@@ -62,7 +62,7 @@ function AboutSection() {
             </span>
             Men
           </h2>
-          <p>The Mountain Men is a dedicated team of raconteurs, philosophers, cinema enthusiasts, and nature lovers that understands your requirements and delivers complete satisfaction. We provide not only what is promised, but also the thoughtful details beyond expectations — and that is what makes us different.</p>
+          <p className="text-lg tracking-tight max-w-5xl leading-[1.15]">The Mountain Men is a dedicated team of raconteurs, philosophers, cinema enthusiasts, and nature lovers that understands your requirements and delivers complete satisfaction. We provide not only what is promised, but also the thoughtful details beyond expectations — and that is what makes us different.</p>
 
           {/* Narrative Paragraphs */}
           <div id="team" className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 max-w-4xl text-gray-8xl text-base md:text-lg font-light leading-relaxed">
@@ -70,7 +70,7 @@ function AboutSection() {
               <img src="/about/team1.jpg" alt="" />
               <h3 className="font-semibold">Deepak Malhotra</h3>
               <h4>(Director)</h4>
-              <p>
+              <p className="text-lg tracking-tight max-w-5xl">
                 A multi talented personality with an extensive on and off field
                 production experience from the industry of more than 10 years,
                 Deepak has been handling the projects with a perfection nobody
@@ -82,7 +82,7 @@ function AboutSection() {
               <img src="/about/team2.jpg" alt="" />
               <h3 className="font-semibold">Gaurav Gairola</h3>
               <h4>(Director)</h4>
-              <p>
+              <p className="text-lg tracking-tight max-w-5xl">
                 An experienced mountaineer and seasoned traveller who has been to the core of Uttarakhand to live and experience the roots. With an experience of local know-hows, folklores and tradition, he has been working closely with the state tourism board to promote and advertise the tradition and beauty of Uttarakhand, especially, making documentaries.
               </p>
             </div>

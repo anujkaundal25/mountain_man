@@ -11,7 +11,7 @@ function Expertise() {
         <h2 className="text-4xl md:text-5xl lg:text-5xl font-extrabold tracking-tight max-w-5xl leading-[1.15]">
           Our Location's
         </h2>
-        <p className="text-sm md:text-lg lg:text-xl pt-5 tracking-tight max-w-5xl leading-[1.15]">Key Shooting Locations</p>
+        <p className="text-lg tracking-tight max-w-5xl">Key Shooting Locations</p>
 
         {/* Grid container */}
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 pt-10">

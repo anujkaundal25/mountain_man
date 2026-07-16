@@ -53,7 +53,7 @@ function Heilight() {
         
         {/* Top: Main Heading */}
         <div className="shrink-0">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight max-w-5xl leading-[1.15]">
+          <h2 className="text-4xl md:text-5xl lg:text-5xl font-extrabold tracking-tight max-w-5xl leading-[1.15]">
             Our Projects
           </h2>
         </div>

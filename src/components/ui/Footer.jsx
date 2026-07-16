@@ -55,11 +55,11 @@ function Footer() {
           {/* Col 1: Brand Logo & About Info */}
           <div className="lg:col-span-4 space-y-5">
             <div className="flex items-center gap-3">
-              <span className="text-lg font-bold tracking-tight text-white">
+              <span className="text-lg md:text-xl lg:text-2xl font-extrabold tracking-tight max-w-5xl leading-[1.15]">
                 Mountain Men Films
               </span>
             </div>
-            <p className="text-sm text-neutral-400 max-w-sm leading-relaxed">
+            <p className="text-sm tracking-tight max-w-5xl text-neutral-500">
               The Mountain Men is a dedicated team of raconteurs, philosophers,
               cinema enthusiasts, and nature lovers that understands your
               requirements and delivers complete satisfaction. We provide not
@@ -71,7 +71,7 @@ function Footer() {
                 <a
                   key={label}
                   href={href}
-                  className="hover:text-white text-neutral-500 transition-colors duration-200"
+                  className="hover:text-white text-neutral-500 transition-colors duration-200 text-lg tracking-tight"
                   aria-label={label}
                 >
                   <Icon className="w-4 h-4" />
@@ -174,7 +174,7 @@ function Footer() {
         {/* Bottom Section: Utilities & Copyright */}
         <div className="pt-8 border-t border-neutral-900 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-neutral-500">
           <div className="flex w-full items-center justify-center text-center gap-1.5 tracking-wide">
-            <span className="text-center text-neutral-600">
+            <span className="text-sm tracking-tight max-w-5xl">
               &copy; {new Date().getFullYear()} Mountain Men Films LLP. Designed
               by Best Web Development Company in Dehradun
             </span>
