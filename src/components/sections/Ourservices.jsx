@@ -44,7 +44,7 @@ function OurApproach() {
   };
 
   return (
-    <section className="relative w-full min-h-screen bg-black text-white flex items-center py-20 px-6 md:px-12 lg:px-20 overflow-hidden select-none">
+    <section id="services" className="relative w-full min-h-screen bg-black text-white flex items-center py-20 px-6 md:px-12 lg:px-20 overflow-hidden select-none">
       {/* Background Image / Video Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-screen pointer-events-none bg-fixed"

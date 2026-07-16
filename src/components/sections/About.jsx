@@ -6,6 +6,7 @@ function AboutSection() {
     <div
       style={{ fontFamily: "var(--font-helvetica-now-extended)" }}
       className="bg-[#EAEAEA]"
+      id="about"
     >
       {/* SECTION: About The Mountain Man */}
       <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] max-w-7xl mx-auto gap-8 md:gap-10 items-start px-6 py-16 md:p-20 border-t border-black/10">
@@ -64,7 +65,7 @@ function AboutSection() {
           <p>The Mountain Men is a dedicated team of raconteurs, philosophers, cinema enthusiasts, and nature lovers that understands your requirements and delivers complete satisfaction. We provide not only what is promised, but also the thoughtful details beyond expectations — and that is what makes us different.</p>
 
           {/* Narrative Paragraphs */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 max-w-4xl text-gray-8xl text-base md:text-lg font-light leading-relaxed">
+          <div id="team" className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 max-w-4xl text-gray-8xl text-base md:text-lg font-light leading-relaxed">
             <div className="space-y-2">
               <img src="/about/team1.jpg" alt="" />
               <h3 className="font-semibold">Deepak Malhotra</h3>

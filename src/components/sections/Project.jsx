@@ -46,7 +46,9 @@ function Heilight() {
   }, []);
 
   return (
-    <section className="bg-[#FFAEC9] text-[#2C0C30] select-none py-16 md:py-24">
+    <section 
+    id='projects'
+    className="bg-[#FFAEC9] text-[#2C0C30] select-none py-16 md:py-24">
       <div className="max-w-[1440px] mx-auto px-10 md:px-20 flex flex-col gap-10 overflow-hidden">
         
         {/* Top: Main Heading */}

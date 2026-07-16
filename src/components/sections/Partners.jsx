@@ -34,7 +34,7 @@ function TechPartners() {
   const secondRowLogos = logos.slice(Math.ceil(logos.length / 2));
 
   return (
-    <section 
+    <section id="clients"
       style={{ fontFamily: "var(--font-helvetica-now-extended)" }}
       className="bg-[#EAE8E4] w-full py-20 overflow-hidden text-[#232323] border-t border-black/10"
     >
