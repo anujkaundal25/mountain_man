@@ -6,7 +6,7 @@ function Form() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div
+    <div id="contact"
     className="bg-[#EAEAEA] min-h-screen p-6 md:p-12 lg:p-20 flex items-center justify-center">
       {/* Main Wrapper */}
       <div className="max-w-7xl w-full flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-16">

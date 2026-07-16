@@ -88,6 +88,7 @@ function Header() {
             ))}
 
             <li>
+              <a href="#contact">
               <button
                 className={`px-5 py-2 rounded-full text-xs font-semibold transition-all duration-300 ${
                   isScrolled
@@ -95,8 +96,8 @@ function Header() {
                     : "bg-white text-black hover:bg-gray-200"
                 }`}
               >
-                Connect
-              </button>
+                Contact US
+              </button></a>
             </li>
           </ul>
         </nav>
