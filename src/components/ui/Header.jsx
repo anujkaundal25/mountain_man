@@ -50,11 +50,13 @@ function Header() {
         }`}
       >
         {/* Logo और Brand Name */}
-        <div className='flex items-center gap-3'>
+        <div className='flex flex-col items-center'>
           <img 
             src="/logo.webp" 
             alt="Logo"
-            className="w-10 h-10 md:w-12 md:h-12 object-contain" 
+            height={100}
+            width={100}
+            className="object-contain" 
           />
           <h2
             className={`text-base md:text-lg font-black tracking-tight transition-colors duration-300 ${
