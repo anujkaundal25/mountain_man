@@ -35,8 +35,7 @@ function TechPartners() {
 
   return (
     <section id="clients"
-      style={{ fontFamily: "var(--font-helvetica-now-extended)" }}
-      className="bg-[#EAE8E4] w-full py-20 overflow-hidden text-[#232323] border-t border-black/10"
+      className="bg-[#EAE8E4] w-full pt-5 overflow-hidden text-[#232323] border-t border-black/10"
     >
       {/* Top Header Content Row */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-16 px-6 md:px-16 lg:px-24">

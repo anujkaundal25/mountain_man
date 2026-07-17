@@ -5,35 +5,35 @@ import { motion } from "framer-motion";
 
 function Services() {
   const services = [
-    {
-      id: "01",
-      img: "/services/image1.webp", 
-      category: "Solutions",
-      title: "Real-Time Brands",
-      dis: "Brands built as living systems to move at the speed of culture",
-    },
-    {
-      id: "02",
-      img: "https://www.monks.com/data/styles/645x600_crop/s3/2025-06/Monks-GlassBoxMedia-Hatch.png.webp?VersionId=Chaj0gFenyXD7qD8PQW8VsJepq3NnFah&itok=x3xEL2dz", 
-      category: "Solutions",
-      title: "Media Acceleration",
-      dis: "Unifying intelligence, content, media, and measurement into one performance system",
-    },
-    {
-      id: "03",
-      img: "https://www.monks.com/data/styles/645x600_crop/s3/2025-06/MarketingOrchestration-Monks-Main-2.png.webp?VersionId=AdvkR3zgn0iNbpIiLfemede.4PyVad4w&itok=3En04Z63", 
-      category: "Solutions",
-      title: "Marketing Orchestration",
-      dis: "We collapse your content supply chain into one AI-powered system",
-    },
-    {
-      id: "04",
-      img: "https://www.monks.com/data/styles/645x600_crop/s3/2025-06/Monks-TechTransformation-main_0.png.webp?VersionId=HZsI12sKxHad5nJDTPQ8lrNg9rK_L3up&itok=TrTVhtiY", 
-      category: "Solutions",
-      title: "AI Transformation",
-      dis: "AI embedded across your business, from strategy to scale",
-    },
-  ];
+  {
+    id: "01",
+    img: "https://images.pexels.com/photos/8063749/pexels-photo-8063749.jpeg",
+    category: "Film Location",
+    title: "Airport",
+    dis: "Modern airport locations with seamless access, efficient logistics, and production-friendly facilities for films, commercials, and travel shoots.",
+  },
+  {
+    id: "02",
+    img: "https://images.pexels.com/photos/10876041/pexels-photo-10876041.jpeg",
+    category: "Film Location",
+    title: "Beaches",
+    dis: "Authentic railway stations offering dynamic backdrops, easy accessibility, and versatile settings for cinematic storytelling and commercial productions.",
+  },
+  {
+    id: "03",
+    img: "https://images.pexels.com/photos/11471987/pexels-photo-11471987.jpeg",
+    category: "Film Location",
+    title: "Bridges",
+    dis: "Scenic highways, mountain roads, and urban routes that provide breathtaking visuals and flexible filming opportunities across Uttarakhand.",
+  },
+  {
+    id: "04",
+    img: "https://images.pexels.com/photos/20260003/pexels-photo-20260003.jpeg",
+    category: "Film Location",
+    title: "Home & Bungalows",
+    dis: "Well-connected helipad locations suitable for aerial sequences, VIP arrivals, action scenes, and efficient crew transportation during production.",
+  },
+];
 
   // Motion Animation Variants
   const containerVariants = {
@@ -60,11 +60,11 @@ function Services() {
 
   return (
     <div
-    className="bg-[#E5E3DF] min-h-screen p-20 flex flex-col items-center overflow-x-hidden">
+    className="bg-[#E5E3DF] min-h-screen p-20 flex flex-col items-center overflow-x-hidden mb-10">
       {/* Header section */}
       <div className="w-full text-left mb-20 lg:mb-28">
         <h2 className="text-[20px] sm:text-[32px] md:text-[45px] lg:text-6xl font-black text-neutral-900 tracking-tighter leading-[1.05] max-w-6xl">
-          Your trusted partner for innovation across four strategic service offerings
+          Gallery
         </h2>
       </div>
 
@@ -105,9 +105,9 @@ function Services() {
 
               {/* Content area */}
               <div className="relative z-10 text-left flex flex-col gap-2.5">
-                <span className="text-[11px] md:text-[13px] font-semibold text-neutral-800 tracking-wide">
+                {/* <span className="text-[11px] md:text-[13px] font-semibold text-neutral-800 tracking-wide">
                   {item.category}
-                </span>
+                </span> */}
                 
                 {/* Title & Circle Arrow Row */}
                 <div className="flex items-center justify-between gap-3 cursor-pointer group/title">

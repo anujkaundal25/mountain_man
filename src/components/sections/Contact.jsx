@@ -7,7 +7,7 @@ function Form() {
 
   return (
     <div id="contact"
-    className="bg-[#EAEAEA] min-h-screen p-6 md:p-12 lg:p-20 flex items-center justify-center">
+    className="bg-[#EAEAEA] p-6 md:p-12 lg:p-20 mt-10 flex items-center justify-center">
       {/* Main Wrapper */}
       <div className="max-w-7xl w-full flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-16">
         {/* Left Column: Heading */}
@@ -120,7 +120,7 @@ function Form() {
                     <div className="pt-2">
                       <button
                         type="submit"
-                        className="w-full py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all duration-200 transform active:scale-[0.99]"
+                        className="w-full py-3.5 bg-gray-800 hover:bg-black text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all duration-500 transform active:scale-[0.99]"
                       >
                         Send Message
                       </button>

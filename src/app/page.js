@@ -8,9 +8,10 @@ import Project from "@/components/sections/Project";
 import Partners from "@/components/sections/Partners";
 import About from "@/components/sections/About"
 import Ourservices from "@/components/sections/Ourservices";
+// import Services from "@/components/sections/Services";
 export default function Home() {
   return (
-    <>
+    <div className="bg-[#EAEAEA]">
       <Header />
 
       {/* Hero */}
@@ -19,6 +20,8 @@ export default function Home() {
       <About/>
       {/* What we offer */}
        <OurAgent />
+
+       {/* <Services/> */}
 
       <Ourservices/>
 
@@ -35,6 +38,6 @@ export default function Home() {
       <Contact />
 
       <Footer />
-    </>
+    </div>
   );
 }

@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 function Expertise() {
   return (
-    <div id="locations" className="bg-[#EAEAEA] min-h-screen w-full p-20">
+    <div id="locations" className="bg-[#EAEAEA] w-full p-20">
       {/* Top Section: Heading and Grid Wrapper */}
       <div className="max-w-7xl w-auto">
         <h2 className="text-4xl md:text-5xl lg:text-5xl font-extrabold tracking-tight max-w-5xl leading-[1.15]">
